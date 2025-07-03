@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NepaliBites | Fusion Nepali Eats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff5722;
+      --secondary: #ffe082;
+      --bg-light: #f9f9f9;
+      --text-dark: #333;
+      --accent: #ec407a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1rem;
+    }
+
+    .product-content h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NepaliBites</h1>
+    <p>Fusion Flavors from the Streets of Nepal</p>
+  </header>
+
+  <section class="section">
+    <h2>Cold Brews & Refreshers</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/coldbrew.webp" alt="Cold Brew Himalayan Coffee">
+        <div class="product-content">
+          <h3>Cold Brew Himalayan Coffee</h3>
+          <p>Strong, smooth, and served over ice for a bold caffeine kick.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/lemonmint.jpg" alt="Lemon Mint Cooler">
+        <div class="product-content">
+          <h3>Lemon Mint Cooler</h3>
+          <p>Fresh lemon juice blended with mint and honey.</p>
+          <p class="price">NPR 85</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/masalachai.jpg" alt="Masala Chiya Latte">
+        <div class="product-content">
+          <h3>Masala Chiya Latte</h3>
+          <p>Classic Nepali spiced tea with creamy twist.</p>
+          <p class="price">NPR 80</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/peachtea.png" alt="Aila Peach Iced Tea">
+        <div class="product-content">
+          <h3>Aila Peach Iced Tea</h3>
+          <p>Fresh brewed tea infused with sweet Nepali peaches.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/pritz.jpg" alt="Pritz">
+        <div class="product-content">
+          <h3>Pritz (non-alcoholic)</h3>
+          <p>Inspired by Newari aila, a smoky citrus-infused soda.</p>
+          <p class="price">NPR 120</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Signature Fusion Wraps & Bowls</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/koreantacos.jpg" alt="Spicy Korean Tacos">
+        <div class="product-content">
+          <h3>Spicy Korean Tacos</h3>
+          <p>Fiery kimchi meets Nepali spices, wrapped in warm tortillas.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/bbqwrap.jpg" alt="Himalayan BBQ Wrap">
+        <div class="product-content">
+          <h3>Himalayan BBQ Wrap</h3>
+          <p>Grilled chicken marinated in smoky Nepali spices, drizzled with a secret tangy sauce.</p>
+          <p class="price">NPR 120</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/momobowl.jpg" alt="Momo Fusion Bowl">
+        <div class="product-content">
+          <h3>Momo Fusion Bowl</h3>
+          <p>Juicy Nepali dumplings served with three exotic dips.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Hearty & Comforting Meals</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/chickenburger.webp" alt="Chicken Burger">
+        <div class="product-content">
+          <h3>Chicken Burger</h3>
+          <p>Juicy chicken patty with lettuce, tomato, pickles, mayo & crispy fries.</p>
+          <p class="price">NPR 140</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/choilafries.jpg" alt="Choila Loaded Fries">
+        <div class="product-content">
+          <h3>Choila Loaded Fries</h3>
+          <p>Crispy fries topped with spicy grilled meat, onions, and yogurt sauce.</p>
+          <p class="price">NPR 120</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/gundrukburrito.jpg" alt="Gundruk & Bean Burrito">
+        <div class="product-content">
+          <h3>Gundruk & Bean Burrito</h3>
+          <p>Fermented greens & local beans rolled with Nepali-style salsa.</p>
+          <p class="price">NPR 85</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/sausages.webp" alt="Nepali Chicken/Buff Sausages">
+        <div class="product-content">
+          <h3>Nepali Chicken/Buff Sausages</h3>
+          <p>Spicy sausages with Nepali spices, achar, and cilantro in a bun.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/corndog.jpg" alt="Nepali Corn Dog">
+        <div class="product-content">
+          <h3>Nepali Corn Dog</h3>
+          <p>Crispy corn dog with juicy meat & tangy Nepali dipping sauce.</p>
+          <p class="price">NPR 100</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Vegetarian Food Options</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/vegansalad.jpg" alt="Nepali Vegan Salad">
+        <div class="product-content">
+          <h3>Nepali Vegan Salad</h3>
+          <p>Mustard greens, radish, soybeans, and tomatoes with timur-lemon dressing.</p>
+          <p class="price">NPR 80</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/aalotama.webp" alt="Aloo Tama">
+        <div class="product-content">
+          <h3>Aloo Tama</h3>
+          <p>Bamboo shoots, potatoes & black-eyed peas curry in biodegradable cup.</p>
+          <p class="price">NPR 40</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/selroti.png" alt="Sel Roti with Chickpeas">
+        <div class="product-content">
+          <h3>Sel Roti with Chickpeas</h3>
+          <p>Crispy sweet sel roti with spiced chickpeas (chana masala).</p>
+          <p class="price">NPR 70</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Add-ons & Loyalty Programs</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/summercombo.jpg" alt="Summer Combo Menu">
+        <div class="product-content">
+          <h3>Summer Combo Menu</h3>
+          <p>Includes Lemon Mint Cooler + Korean Taco or Momo Bowl.</p>
+          <p class="price">NPR 160</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/wintercombo.png" alt="Winter Combo Menu">
+        <div class="product-content">
+          <h3>Winter Combo Menu</h3>
+          <p>Includes Masala Chiya Latte + Corn Dog or Loaded Fries.</p>
+          <p class="price">NPR 170</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/loyaltycard.webp" alt="Loyalty Program">
+        <div class="product-content">
+          <h3>Loyalty Rewards</h3>
+          <p>Earn 1 point per purchase. 10 points = 1 free drink or wrap!</p>
+          <p class="price">Join for Free</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 NepaliBites. All rights reserved.</p>
+  </footer>
+</body>
+</html>
